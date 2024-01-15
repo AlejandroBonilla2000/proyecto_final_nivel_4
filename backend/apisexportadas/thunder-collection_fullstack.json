@@ -1,0 +1,458 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "fullstack",
+    "dateExported": "2023-12-02T16:37:56.117Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "033ab67e-ab68-405b-ba13-d8877e2612f3",
+            "name": "bitacoras",
+            "containerId": "",
+            "created": "2023-12-01T19:23:59.205Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "0b64db1e-85ac-4d07-bc29-2494dafe5755",
+            "name": "enlaces",
+            "containerId": "",
+            "created": "2023-12-01T19:24:17.533Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "7f1f6633-4897-4586-9f1d-6c87d1faa620",
+            "name": "paginas",
+            "containerId": "",
+            "created": "2023-12-01T19:27:20.390Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e47ce570-f775-47de-af61-2db521ea5edd",
+            "name": "personas",
+            "containerId": "",
+            "created": "2023-12-01T19:29:43.303Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "62e227a5-8f25-4612-bb46-b9dfa7ae795a",
+            "name": "roles",
+            "containerId": "",
+            "created": "2023-12-01T19:31:29.878Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "1c0c6d0e-90f8-40cc-b988-2c7aa4288bfa",
+            "name": "usuarios",
+            "containerId": "",
+            "created": "2023-12-01T19:33:09.799Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "32562970-4512-49f1-931d-43bd57cc471e",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-01T19:10:53.684Z",
+            "modified": "2023-12-01T19:11:59.791Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "framan2403@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456j"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "efdb2cb2-e3ca-4836-a876-78893d88807b",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "033ab67e-ab68-405b-ba13-d8877e2612f3",
+            "name": "bitacoras",
+            "url": "http://127.0.0.1:8000/api/bitacoras",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-01T19:14:54.996Z",
+            "modified": "2023-12-01T19:15:12.433Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "13e1d68c-1f0a-4717-8350-cb72dbbe0302",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "0b64db1e-85ac-4d07-bc29-2494dafe5755",
+            "name": "enlaces",
+            "url": "http://127.0.0.1:8000/api/enlaces",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-01T19:23:12.735Z",
+            "modified": "2023-12-01T19:23:25.672Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7405bc21-b7d8-4690-9908-85ff76d5d0db",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "033ab67e-ab68-405b-ba13-d8877e2612f3",
+            "name": "bitacoras",
+            "url": "http://127.0.0.1:8000/api/bitacoras",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-12-01T19:18:10.988Z",
+            "modified": "2023-12-01T19:19:54.644Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bitacora\": \"andres\",\n  \"idusuario\": 10,\n  \"fecha\": \"1973-04-24\",\n  \"hora\": \"09:36:50\",\n  \"ip\": \"753146639\",\n  \"so\": \"1403870797\",\n  \"navegador\": \"Schowalter\",\n  \"usuario\": \"640186211\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa457bd4-bfc2-4d81-b42f-714de91b1bd3",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "",
+            "name": "registro",
+            "url": "http://127.0.0.1:8000/api/registro",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-01T19:12:20.556Z",
+            "modified": "2023-12-01T22:58:27.510Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "tatan"
+                    },
+                    {
+                        "name": "email",
+                        "value": "tatan@tatan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "tatan55"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0c783d6f-517f-4f15-8ac8-f4f999da837d",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "033ab67e-ab68-405b-ba13-d8877e2612f3",
+            "name": "bitacoras",
+            "url": "http://127.0.0.1:8000/api/bitacoras/2",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-12-01T19:20:55.621Z",
+            "modified": "2023-12-01T20:09:39.509Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d19ac184-8642-4fe0-8c59-c63be49e035d",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "033ab67e-ab68-405b-ba13-d8877e2612f3",
+            "name": "bitacoras",
+            "url": "http://127.0.0.1:8000/api/bitacoras/3",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-12-01T19:21:34.581Z",
+            "modified": "2023-12-01T19:54:48.153Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dccdbfee-766d-4357-a5bf-900c762dd610",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "0b64db1e-85ac-4d07-bc29-2494dafe5755",
+            "name": "enlaces",
+            "url": "http://127.0.0.1:8000/api/enlaces",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-12-01T19:24:57.237Z",
+            "modified": "2023-12-01T19:25:08.298Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8c3cc534-d972-46ac-88ea-f8d33d3de48d",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "0b64db1e-85ac-4d07-bc29-2494dafe5755",
+            "name": "enlaces",
+            "url": "http://127.0.0.1:8000/api/enlaces",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-12-01T19:25:25.061Z",
+            "modified": "2023-12-01T19:25:33.950Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "50ed8fa8-90ac-4d3d-8ef6-bd183eeeff0a",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "0b64db1e-85ac-4d07-bc29-2494dafe5755",
+            "name": "enlaces",
+            "url": "http://127.0.0.1:8000/api/enlaces/3",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-12-01T19:25:41.950Z",
+            "modified": "2023-12-01T19:55:01.548Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8081b8dc-6312-4114-9953-21af6e8217c6",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "7f1f6633-4897-4586-9f1d-6c87d1faa620",
+            "name": "paginas",
+            "url": "http://127.0.0.1:8000/api/paginas",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-12-01T19:27:41.446Z",
+            "modified": "2023-12-01T19:28:02.617Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a17b7f00-e18f-416e-bf58-f8e359801794",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "7f1f6633-4897-4586-9f1d-6c87d1faa620",
+            "name": "paginas",
+            "url": "http://127.0.0.1:8000/api/paginas",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-12-01T19:28:27.900Z",
+            "modified": "2023-12-01T19:28:36.632Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fd571011-b6cb-4b2e-9f3c-343392e1751e",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "7f1f6633-4897-4586-9f1d-6c87d1faa620",
+            "name": "paginas",
+            "url": "http://127.0.0.1:8000/api/paginas",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-12-01T19:28:43.902Z",
+            "modified": "2023-12-01T19:28:50.784Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "24747cfd-7664-46fc-84d6-8138f749dc81",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "7f1f6633-4897-4586-9f1d-6c87d1faa620",
+            "name": "paginas",
+            "url": "http://127.0.0.1:8000/api/paginas/3",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-12-01T19:28:57.365Z",
+            "modified": "2023-12-01T19:55:18.167Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "358d8fd6-8233-473a-9cf9-c0a8ce500636",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "e47ce570-f775-47de-af61-2db521ea5edd",
+            "name": "personas",
+            "url": "http://127.0.0.1:8000/api/personas",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-12-01T19:29:48.680Z",
+            "modified": "2023-12-01T19:30:00.140Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f965c218-93a7-4a08-b0e6-fca04c32ff05",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "e47ce570-f775-47de-af61-2db521ea5edd",
+            "name": "personas",
+            "url": "http://127.0.0.1:8000/api/personas",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-12-01T19:30:23.382Z",
+            "modified": "2023-12-01T19:30:28.198Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63bf5475-dfe5-49a3-b9b3-69395d0213ca",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "e47ce570-f775-47de-af61-2db521ea5edd",
+            "name": "personas",
+            "url": "http://127.0.0.1:8000/api/personas",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-12-01T19:30:33.286Z",
+            "modified": "2023-12-01T19:30:38.357Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f48e0742-5d30-42b9-927e-d8652d85f2e3",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "e47ce570-f775-47de-af61-2db521ea5edd",
+            "name": "personas",
+            "url": "http://127.0.0.1:8000/api/personas/2",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-12-01T19:30:53.118Z",
+            "modified": "2023-12-01T19:39:39.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f800d05c-3a06-42e8-9266-e81af2b93ba4",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "62e227a5-8f25-4612-bb46-b9dfa7ae795a",
+            "name": "roles",
+            "url": "http://127.0.0.1:8000/api/roles",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2023-12-01T19:31:36.326Z",
+            "modified": "2023-12-01T19:31:58.613Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f6abaff-1902-434d-af53-a6768abddaf2",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "62e227a5-8f25-4612-bb46-b9dfa7ae795a",
+            "name": "roles",
+            "url": "http://127.0.0.1:8000/api/roles",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-12-01T19:32:08.646Z",
+            "modified": "2023-12-01T19:32:16.697Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e72ac7a6-65ea-4262-8bf0-53d8b32a8cf6",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "62e227a5-8f25-4612-bb46-b9dfa7ae795a",
+            "name": "roles",
+            "url": "http://127.0.0.1:8000/api/roles",
+            "method": "PUT",
+            "sortNum": 230000,
+            "created": "2023-12-01T19:32:24.270Z",
+            "modified": "2023-12-01T19:32:30.369Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c3bb1846-d713-4286-add8-dd5a2b56fc13",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "62e227a5-8f25-4612-bb46-b9dfa7ae795a",
+            "name": "roles",
+            "url": "http://127.0.0.1:8000/api/roles/3",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2023-12-01T19:32:37.534Z",
+            "modified": "2023-12-01T19:56:51.296Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac672912-32b0-4fec-bd9b-3487be3f9775",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "1c0c6d0e-90f8-40cc-b988-2c7aa4288bfa",
+            "name": "usuarios",
+            "url": "http://127.0.0.1:8000/api/usuarios",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2023-12-01T19:33:16.159Z",
+            "modified": "2023-12-01T19:33:24.854Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc171644-dffe-4ffa-a4d9-4c91dc8de5e1",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "1c0c6d0e-90f8-40cc-b988-2c7aa4288bfa",
+            "name": "usuarios",
+            "url": "http://127.0.0.1:8000/api/usuarios",
+            "method": "POST",
+            "sortNum": 260000,
+            "created": "2023-12-01T19:33:59.334Z",
+            "modified": "2023-12-01T19:34:06.187Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a75c373f-37a8-47b1-bd39-6992cdaabbf8",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "1c0c6d0e-90f8-40cc-b988-2c7aa4288bfa",
+            "name": "usuarios",
+            "url": "http://127.0.0.1:8000/api/usuarios/1",
+            "method": "PUT",
+            "sortNum": 270000,
+            "created": "2023-12-01T19:34:13.582Z",
+            "modified": "2023-12-01T19:35:14.921Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"idpersona\": 10,\n    \"usuario\": \"koelpin.evie@kuphal.com\",\n    \"clave\": \"andres\",\n    \"habilitado\": \"0\",\n    \"fecha\": \"2023-06-18\",\n    \"idrol\": 10,\n    \"fechadecreacion\": \"2019-11-06\",\n    \"fechamodificacion\": \"1972-07-17\",\n    \"usuariocreacion\": \"2002-07-04\",\n    \"ususariomodificacion\": \"2001-12-26\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e07421f-7721-42c1-927c-8c2c46061e2a",
+            "colId": "af35bac5-9dd4-4cae-b7c1-7873fc229a71",
+            "containerId": "1c0c6d0e-90f8-40cc-b988-2c7aa4288bfa",
+            "name": "usuarios",
+            "url": "http://127.0.0.1:8000/api/usuarios/3",
+            "method": "DELETE",
+            "sortNum": 280000,
+            "created": "2023-12-01T19:36:14.982Z",
+            "modified": "2023-12-01T19:57:01.758Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
