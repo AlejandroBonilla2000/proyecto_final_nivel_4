@@ -1,4 +1,3 @@
-// EditarUsuario.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -46,21 +45,21 @@ const EditarUsuario = () => {
   };
 
   return (
-    <div className="container mx-auto my-8">
-      <div className="bg-gray-800 text-white p-4">
-        <h2 className="text-2xl font-bold">Editar Usuario</h2>
+    <div style={{ fontFamily: 'Arial, sans-serif', margin: 'auto', marginTop: '20px', maxWidth: '400px' }}>
+      <div style={{ backgroundColor: '#333', color: '#fff', padding: '10px', borderRadius: '5px', marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center', margin: '0' }}>Editar Usuario</h2>
       </div>
-      <div className="mt-4">
+      <div style={{ backgroundColor: '#fff', border: '1px solid #ddd', borderRadius: '5px', padding: '20px' }}>
         {loading ? (
-          <p className="text-gray-600">Cargando usuario...</p>
+          <p style={{ textAlign: 'center', color: '#666' }}>Cargando usuario...</p>
         ) : (
           <>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', color: '#4a5568', marginBottom: '0.5rem' }} htmlFor="name">
                 Nombre
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                style={{ width: '100%', padding: '0.75rem', borderRadius: '0.375rem', border: '1px solid #cbd5e0', outline: 'none' }}
                 id="name"
                 type="text"
                 placeholder="Nombre"
@@ -69,12 +68,12 @@ const EditarUsuario = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="usuario">
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', color: '#4a5568', marginBottom: '0.5rem' }} htmlFor="usuario">
                 Usuario
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                style={{ width: '100%', padding: '0.75rem', borderRadius: '0.375rem', border: '1px solid #cbd5e0', outline: 'none' }}
                 id="usuario"
                 type="text"
                 placeholder="Usuario"
@@ -83,12 +82,12 @@ const EditarUsuario = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="clave">
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', color: '#4a5568', marginBottom: '0.5rem' }} htmlFor="clave">
                 Clave
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                style={{ width: '100%', padding: '0.75rem', borderRadius: '0.375rem', border: '1px solid #cbd5e0', outline: 'none' }}
                 id="clave"
                 type="password"
                 placeholder="Clave"
@@ -98,7 +97,7 @@ const EditarUsuario = () => {
               />
             </div>
             <button
-              className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+              style={{ width: '100%', padding: '0.75rem', backgroundColor: '#4299e1', color: '#fff', borderRadius: '0.375rem', border: 'none', cursor: 'pointer' }}
               type="button"
               onClick={handleGuardar}
             >
@@ -112,4 +111,3 @@ const EditarUsuario = () => {
 };
 
 export default EditarUsuario;
-

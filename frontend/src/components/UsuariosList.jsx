@@ -1,4 +1,3 @@
-// UsuariosList.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -28,34 +27,34 @@ const UsuariosList = () => {
   };
 
   return (
-    <div className="container mx-auto my-8">
-      <div className="bg-gray-800 text-white p-4">
-        <h2 className="text-2xl font-bold">Lista de Usuarios</h2>
+    <div style={{ fontFamily: 'Arial, sans-serif', margin: 'auto', marginTop: '20px', maxWidth: '800px' }}>
+      <div style={{ backgroundColor: '#333', color: '#fff', padding: '10px', borderRadius: '5px', marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center', margin: '0' }}>Lista de Usuarios</h2>
       </div>
-      <div className="mt-4">
+      <div style={{ backgroundColor: '#fff', border: '1px solid #ddd', borderRadius: '5px' }}>
         {loading ? (
-          <p className="text-gray-600">Cargando usuarios...</p>
+          <p style={{ textAlign: 'center', padding: '20px' }}>Cargando usuarios...</p>
         ) : (
-          <table className="min-w-full bg-white border border-gray-300">
-            <thead>
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead style={{ backgroundColor: '#f2f2f2' }}>
               <tr>
-                <th className="py-2 px-4 border-b">ID</th>
-                <th className="py-2 px-4 border-b">Nombre</th>
-                <th className="py-2 px-4 border-b">Usuario</th>
-                <th className="py-2 px-4 border-b">Clave</th>
-                <th className="py-2 px-4 border-b">Acciones</th>
+                <th style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>ID</th>
+                <th style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>Nombre</th>
+                <th style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>Usuario</th>
+                <th style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>Clave</th>
+                <th style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>Acciones</th>
               </tr>
             </thead>
             <tbody>
               {usuarios.map((usuario) => (
-                <tr key={usuario.id}>
-                  <td className="py-2 px-4 border-b">{usuario.id}</td>
-                  <td className="py-2 px-4 border-b">{usuario.name}</td>
-                  <td className="py-2 px-4 border-b">{usuario.usuario}</td>
-                  <td className="py-2 px-4 border-b">{usuario.clave}</td>
-                  <td className="py-2 px-4 border-b">
+                <tr key={usuario.id} style={{ backgroundColor: '#fff' }}>
+                  <td style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>{usuario.id}</td>
+                  <td style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>{usuario.name}</td>
+                  <td style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>{usuario.usuario}</td>
+                  <td style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>{usuario.clave}</td>
+                  <td style={{ padding: '10px', borderBottom: '1px solid #ddd' }}>
                     <button
-                      className="bg-blue-500 text-white py-1 px-2 mr-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+                      style={{ backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px', padding: '5px 10px', cursor: 'pointer' }}
                       onClick={() => handleEdit(usuario.id)}
                     >
                       Editar
@@ -72,5 +71,3 @@ const UsuariosList = () => {
 };
 
 export default UsuariosList;
-
-

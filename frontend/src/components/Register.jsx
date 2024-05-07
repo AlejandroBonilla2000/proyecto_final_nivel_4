@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const navigate = useNavigate();
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,69 +22,61 @@ const Register = () => {
       navigate('/login');
     } catch (error) {
       if (error.response && error.response.status === 422) {
-        console.log('Validation errors:', error.response.data.errors);
-        // Display error messages to the user as needed
+        console.log('Errores de validación:', error.response.data.errors);
+        // Mostrar mensajes de error al usuario según sea necesario
       } else {
-        console.error('Error during registration:', error);
+        console.error('Error durante el registro:', error);
       }
     }
   };
 
   return (
-    <div className='flex items-center justify-center min-h-screen bg-gray-100'>
-      <div className='bg-white p-8 rounded-md shadow-md w-full max-w-md'>
-        <h2 className='text-2xl font-semibold mb-6 text-center'>Regístrate</h2>
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', backgroundColor: '#f3f4f6' }}>
+      <div style={{ backgroundColor: '#ffffff', padding: '20px', borderRadius: '8px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', width: '100%', maxWidth: '400px' }}>
+        <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '1.5rem', textAlign: 'center' }}>Regístrate</h2>
         <form onSubmit={handleSubmit}>
-          <div className='mb-4'>
-            <label htmlFor='name' className='block text-sm font-medium text-gray-700'>
-              Name:
-            </label>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor='name' style={{ display: 'block', fontSize: '0.875rem', fontWeight: '500', color: '#374151', marginBottom: '0.25rem' }}>Nombre:</label>
             <input
               type='text'
               id='name'
               name='name'
               onChange={handleChange}
-              className='mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
+              style={{ width: '100%', padding: '0.5rem', borderRadius: '0.375rem', border: '1px solid #e5e7eb', outline: 'none' }}
               required
             />
           </div>
-          <div className='mb-4'>
-            <label htmlFor='email' className='block text-sm font-medium text-gray-700'>
-              Email:
-            </label>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor='email' style={{ display: 'block', fontSize: '0.875rem', fontWeight: '500', color: '#374151', marginBottom: '0.25rem' }}>Email:</label>
             <input
               type='email'
               id='email'
               name='email'
               onChange={handleChange}
-              className='mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
+              style={{ width: '100%', padding: '0.5rem', borderRadius: '0.375rem', border: '1px solid #e5e7eb', outline: 'none' }}
               required
             />
           </div>
-          <div className='mb-4'>
-            <label htmlFor='password' className='block text-sm font-medium text-gray-700'>
-              Password:
-            </label>
+          <div style={{ marginBottom: '1rem' }}>
+            <label htmlFor='password' style={{ display: 'block', fontSize: '0.875rem', fontWeight: '500', color: '#374151', marginBottom: '0.25rem' }}>Contraseña:</label>
             <input
               type='password'
               id='password'
               name='password'
               onChange={handleChange}
-              className='mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
+              style={{ width: '100%', padding: '0.5rem', borderRadius: '0.375rem', border: '1px solid #e5e7eb', outline: 'none' }}
               required
             />
           </div>
           <button
             type='submit'
-            className='w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300'
+            style={{ width: '100%', padding: '0.75rem', backgroundColor: '#3b82f6', color: '#ffffff', borderRadius: '0.375rem', border: 'none', cursor: 'pointer' }}
           >
             Registrarse
           </button>
-          <div className='mt-4 text-center'>
-            <span className='mr-2'>¿Ya tienes una cuenta?</span>
-            <a href='/login' className='text-blue-500 hover:text-blue-600'>
-              Inicia sesión
-            </a>
+          <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+            <span style={{ marginRight: '0.25rem' }}>¿Ya tienes una cuenta?</span>
+            <a href='/login' style={{ color: '#3b82f6', textDecoration: 'none', fontWeight: '500' }}>Inicia sesión</a>
           </div>
         </form>
       </div>
